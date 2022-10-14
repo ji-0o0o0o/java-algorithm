@@ -1,4 +1,4 @@
-package paractice;
+package paractice.class4;
 
 public class basic4_5 {
     public static void main(String[] args) {
