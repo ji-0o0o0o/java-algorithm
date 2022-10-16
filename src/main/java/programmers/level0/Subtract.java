@@ -1,6 +1,6 @@
 package programmers.level0;
 
-public class GetTheRest {
+public class Subtract {
     public static void main(String[] args) {
 
         Solution sol = new Solution();
