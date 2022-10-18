@@ -14,20 +14,13 @@ public class ShringPizza_2 {
 
     static class Solution {
         public int solution(int n) {
-            int answer = 0;
-            int a= 0;
-            int b;
-            int c;
-
-            for (int i = 1; i <=6 ; i++) {
-                if (6%i ==0 && n%i == 0){
-                     a = i;
+            int answer;
+            for (int i = 1; true ; i++) {
+                if (6*i%n==0){
+                    answer = i;
+                    break;
                 }
-
             }
-            b= 6/a;
-            c=n/a;
-            answer = a*b*c/6;
             return answer;
         }
     }
