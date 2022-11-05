@@ -1,4 +1,4 @@
-package paractice.class5.basic;
+package paractice.class5.prac;
 
 import java.util.Scanner;
 
