@@ -43,6 +43,24 @@ public class TripleL {
             System.out.println();
         }
     }
+    static void spira(int a){
+        for (int i = 1; i <=a ; i++) {
+            System.out.print(" ".repeat(a-i));
+            for (int j = 1; j <=(i-1)*2+1 ; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void npira(int a){
+        for (int i = 1; i <=a ; i++) {
+            System.out.print(" ".repeat(a-i));
+            for (int j = 1; j <=(i-1)*2+1 ; j++) {
+                System.out.print(i%10);
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -55,6 +73,10 @@ public class TripleL {
         triangleRB(a);
         System.out.println("오른쪽 위가 직각인 이동변삼각형");
         triangleRU(a);
+        System.out.println("n단 피라미드");
+        spira(a);
+        System.out.println("n단 숫자피라미드");
+        npira(a);
     }
 }
 
