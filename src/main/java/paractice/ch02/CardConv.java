@@ -9,9 +9,10 @@ class CardConv {
         String dchar = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         do {
-            d[digits++]=dchar.charAt(x % r);//r로 나눈 나머지를 저장
+            d[digits++]=dchar.charAt(x % r);//r로 나눈 나머지를 저장,//x를 r로 나눈 나머지 숫자자리의 dchar를 가져온다
             x/=r;
-        }while (x!=0);
+        }while (x!=0);;//0이면 계산 끝남, 계산 끝나기 전까지 계속
+        //그다음에 거꾸로 끄내주면 된다
         for (int i = 0; i <digits/2 ; i++) {//배열 d의 숫자 문자열을 역순으로 정렬
             char t = d[i];
             d[i]= d[digits-i-1];
