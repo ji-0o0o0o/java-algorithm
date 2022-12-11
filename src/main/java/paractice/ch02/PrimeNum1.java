@@ -5,17 +5,17 @@ class PrimeNum1 {
     public static void main(String[] args) {
         int cnt = 0;//나눗셈 횟수
 
-        for (int n = 2; n <=1000 ; n++) {
-//            int i;
-            for (int i = 2; i <n ; i++) {
+        for (int i = 2; i <1000 ; i++) {
+            int j;
+            for (j = 2; j <i ; j++) {
                 cnt++;
-                if (n%i==0){//나누어 떨어지면 소수가 아니므로 종료
+                if (i%j==0){
                     break;
                 }
-                if (n==i){//마자믹까지 나누어 떨어지지 않음
-                    System.out.println(n);
-                }
+            }
 
+            if (i==j){//한번도 안나눠지면 소수 확인
+                System.out.println(i);
             }
         }
         System.out.println("나눗셈한 횟수: "+cnt);
