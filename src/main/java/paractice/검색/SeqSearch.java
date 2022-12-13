@@ -3,7 +3,7 @@ package paractice.검색;
 import java.util.Scanner;
 
 //선형검색
-class SeqSearch{
+class SeqSearch {
     static int seqSearch(int[] a, int n , int key){
         int i=0;
 
