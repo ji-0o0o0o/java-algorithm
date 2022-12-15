@@ -17,7 +17,7 @@ public class 개미군단 {
                 hp%=3;
                 }
             if (hp>=1){
-                    cnt+=hp/1;
+                    cnt+=hp;
                 }
             return cnt;
         }
