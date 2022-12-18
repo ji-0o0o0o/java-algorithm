@@ -10,15 +10,14 @@ public class 가위바위보 {
     static class Solution {
         public String solution(String rsp) {
             StringBuilder stringBuffer = new StringBuilder();
-            String[] answer = new String[rsp.length()];
+
             for (int i = 0; i <rsp.length() ; i++) {
-                if(rsp.charAt(i)==2)
-                    answer[i]="0";
-                else if(rsp.charAt(i)==5)answer[i]="2";
-                else if(rsp.charAt(i)==0)answer[i]="5";
-                System.out.println(answer[i]);
+                String a = String.valueOf(rsp.charAt(i));
+                if(a.equals("2"))stringBuffer.append("0");
+                if(a.equals("5"))stringBuffer.append("2");
+                if(a.equals("0"))stringBuffer.append("5");
             }
-            return Arrays.toString(answer);
+            return stringBuffer.toString();
         }
     }
 }
