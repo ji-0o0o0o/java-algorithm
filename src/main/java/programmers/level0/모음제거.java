@@ -10,7 +10,6 @@ public class 모음제거 {
     static class Solution {
         public String solution(String my_string) {
             return my_string.replaceAll("[a|u|i|e|o|u]","");
-//            String[] nums = my_string.replaceAll("[^0-9]", "").split("");
         }
         public String solution2(String my_string) {
             String answer = "";
