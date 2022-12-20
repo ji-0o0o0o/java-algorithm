@@ -31,7 +31,7 @@ public class 한번만등장한문자 {
 
     static class Solution {
         //전체다 비교해서 같은게 있으면 빈문자열로 대체
-        //이거 80점만 나옴....
+        //이거 80점만 나옴....-> Arraysot자리 조정하니까 해결됨
         public String solution(String s) {
             char[] a = s.toCharArray();
             Arrays.sort(a);//정렬 안하면 제대로 안지워짐...
